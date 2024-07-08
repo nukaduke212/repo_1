@@ -6,7 +6,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
-    <body>
+    <body class="antialiased">
         <h1 class='title'>
             {{ $post->title }}
         </h1>
@@ -16,6 +16,9 @@
                 <p class='body'>{{ $post->body }}</p>
             </div>
         </div>
+        <dev class="edit">
+            <a href="/posts/{{ $post->id }}/edit">edit</a>
+        </dev>
         <dev class="footer">
             <a href="/">戻る</a>
         </dev>
